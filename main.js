@@ -1,8 +1,12 @@
-const square = function(num){
-    return num * num;
+function checkIfnumber(arg){
+    if(typeof arg === 'number' &&!isNaN(arg)){
+        console.log("Аргумент є числом: ", arg);
+    } else {
+        console.log("Аргумент не є числом: ", arg);
+    }
 }
 
-console.log(square(12));
-console.log(square(11));
-console.log(square(10));
-console.log(square(9));
+checkIfnumber(24);
+checkIfnumber("Hello!");
+checkIfnumber(4);
+checkIfnumber("This is text");
