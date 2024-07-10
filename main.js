@@ -1,11 +1,8 @@
-function printMessage(message) {
-    console.log(message);
+const square = function(num){
+    return num * num;
 }
 
-function sendMessage(message, callback){
-    callback(message);
-}
-
-sendMessage("Hello, world!", printMessage);
-sendMessage("See you tommorow!", printMessage);
-sendMessage("The recording has been postponed for a week!", printMessage);
+console.log(square(12));
+console.log(square(11));
+console.log(square(10));
+console.log(square(9));
