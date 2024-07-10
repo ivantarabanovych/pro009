@@ -1,11 +1,11 @@
-function calculateArea(width, heigth){
-    return width * heigth;
+function printMessage(message) {
+    console.log(message);
 }
 
-let area1 = calculateArea(4,8);
-let area2 = calculateArea(5,10);
-let area3 = calculateArea(3,2)
+function sendMessage(message, callback){
+    callback(message);
+}
 
-console.log("Площа першого прямокутника: " + area1);
-console.log("Площа другого прямокутника: " + area2);
-console.log("Площа третього прямокутника: " + area3);
+sendMessage("Hello, world!", printMessage);
+sendMessage("See you tommorow!", printMessage);
+sendMessage("The recording has been postponed for a week!", printMessage);
